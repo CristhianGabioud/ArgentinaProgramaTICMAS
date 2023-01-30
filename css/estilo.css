@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;  
+  }
+
+body{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    color: black; 
+    display: grid;
+}
+
+.header {
+    padding: 40px;
+    text-align: center; 
+    background: #517870; 
+    color: white; 
+    
+  
+}
+.header figure {
+    float: center;
+}
+
+  
+.header figure img {
+    border-radius: 90px;
+    border: solid #fff;
+    height: 175px;
+    width: 175px;
+    position: relative;
+    margin: 5px;
+ }
+
+.header figure h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #f9f5f5;
+    position: relative;
+    margin: 5px;
+}
+
+.header figure h2{
+  font-size: 35px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #f9f5f5;
+  position: relative;
+  margin: 5px;
+
+}
+
+.navbar2 {
+    overflow: hidden;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /**position: fixed;*/
+  }
+  
+
+.navbar2 a {
+    float: left; 
+    display: block; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 25px; 
+    text-decoration: solid; 
+    font-size: 15px;
+  }
+  
+  
+
+  
+  
+.navbar2 a:hover {
+    background-color: rgb(150, 146, 146); 
+    color: black;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+  .columna {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .lateral {
+    flex: 35%;
+    background-color: #58b4a1; 
+    padding: 30px;
+    border-color: black;
+    border: 4px outset #525455;
+    font-family: 'Unbounded', cursive;
+  }
+
+  .lateral h3{
+    float: center; 
+    display: block; 
+    color: rgb(11, 49, 53);
+    text-align: center;
+    
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+
+  .lateral figure img{
+    float: center; 
+    margin: auto;
+    display: block;
+    border-color: aliceblue;
+    border: solid #fff;
+    height: 100px;
+    width: 100px; 
+    
+  }
+
+  .lateral ul{
+    float: center; 
+    display: block; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px; 
+    text-decoration: none; 
+    font-size: 20px;
+    list-style-type: disc;
+    
+  }
+  
+  
+  .principal {
+    flex: 65%; 
+    border: 4px outset #1C6EA4;
+    background-color:#20a288; 
+    padding: 30px;
+  }
+
+  .principal h3{
+    float: center; 
+    display: block; 
+    color: rgb(65, 66, 67);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    padding: 30px;
+    font-family: 'Prompt', sans-serif;
+  }
+
+
+  .principal ul{
+    float: center; 
+    display: block; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; 
+    font-size: 25px;
+    list-style-type: none;
+    
+  }
+
+  .progress {
+    height: 35px;
+    width: 40%;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom: 15px;
+    margin: auto;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: #428bca;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+    animation-name:expand;
+    animation-duration:10s;
+    animation-iteration-count:1;
+    animation-timing-function: ease-in;   
+}
+ 
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #cce7f5;
+    font-size: 15px;
+} 
+
+@keyframes expand {
+  from {width:0%;}
+  to {}
+}
+
+
+
+.laboral ul li{
+  list-style-type: disc;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .footer {
+    text-align: center; 
+    background: rgb(0, 0, 0);
+  }
+
+  .footer h2{
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+    color: whitesmoke;
+  }
+
+  .icon-bar {
+    
+    overflow: hidden;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+  .icon-bar a {
+    float: left; 
+    display: block; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 25px; 
+    text-decoration: solid; 
+    font-size: 15px;
+  }
+
+
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
